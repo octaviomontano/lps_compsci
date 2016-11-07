@@ -1,0 +1,7 @@
+print('How many people will you have at your party?')
+people = raw_input()
+print('How many donuts will you have at your party?')
+donuts = raw_input()
+print('Our party has ' + people + ' and ' + donuts + ' donuts')
+person = int(donuts) // int(people)
+print('Each person at the party get\'s ' + str(person) + ' donut(s)')
