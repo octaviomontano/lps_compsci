@@ -1,4 +1,4 @@
-fave = 45
+fave = 14
 x = 1
 while x == 1:
 	print('')
@@ -10,9 +10,9 @@ while x == 1:
                 print('Hooray, you won! Good choice.')
                 x = 0
         if user < fave and x == 1:
-                print('Sorry, you lose. :( Try a higher number')
+                print('I don\'t like that number! - try another!')
         if user > fave and x == 1:
-                print('Sorry, you lose. :( Try a lower number')
+                print('I don\'t like that number! - try another!')
         if user % fave == 0 and x == 1:
                 print('Here\'s a hint! Your number was a multiplier of mines')
         if float(fave) / user == fave / user and x == 1:
