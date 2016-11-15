@@ -6,7 +6,7 @@ ceiling = int(raw_input())
 count = 0
 multiple = 0
 while multiple < ceiling:
-	float(math) = count * number
+	math = float(count * number)
 	print(str(count) + ' times ' + str(number) + ' equals ' + str(math))
 	multiple = count * number
 	count += 1
