@@ -10,5 +10,5 @@ while multiple < ceiling:
 	print(str(count) + ' times ' + str(number) + ' equals ' + str(math))
 	multiple = count * number
 	count += 1
-print'There are', count ,'multiples of', number,'up to', str(ceiling) + '! Have a nice day!'
+print'There are', count ,'integer multiples of', number,'that are less than', str(ceiling) + '. Have a nice day!'
 
