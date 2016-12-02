@@ -6,9 +6,9 @@ point = 100
 # ^ variable to track points
 # v  define a variable
 yrNum = 0
+print 'I\'m thinking of a number from 1 to 1000. Enter your guess!'
 # v create the loop for the game
 while yrNum != myNum:
-	print 'I\'m thinking of a number from 1 to 1000. Enter your guess!'
 #ask for guess, and converted to an integar. (I did the whole code and 
 #was absolutely sure it would work, but it didn't even though I was certain
 #everything was correct and my only problem was that I didn't convert the
