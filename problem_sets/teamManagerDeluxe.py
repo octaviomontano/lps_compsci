@@ -23,6 +23,10 @@ class TeamMember(object):
   #returns player age
   def getAge(self):
     return int(self.age)
+
+  #returns player jersey number
+  def getJnum(self):
+    return self.jnum
   
 #returns team into program
 def loadTeam():
@@ -53,7 +57,7 @@ if choice == 2:
   myPlayers = loadTeam()
 
 while keepRunning:
-  print("What would you like to do? Enter the # of your choice and press 'enter' \n (1) Add a player. \n (2) Print all players. \n (3) Print average number of goals for all players \n (4) Print average age for all players \n (5) Save your player list to a file \n (0) Leave the program")
+  print("What would you like to do? Enter the # of your choice and press 'enter' \n (1) Add a player. \n (2) Print all players. \n (3) Print average number of goals for all players \n (4) Print average age for all players \n (5) Remove a player based on Jersey Number \n (6) Save your player list to a file \n (0) Leave the program")
   response = input()
   
   #statement that breaks the loop and ends the program
@@ -96,6 +100,15 @@ while keepRunning:
     for p in myPlayers:
       total += p.getAge()
     print(total/len(myPlayers)) 
-
+  
   if response == 5:
+    jersey = input('Enter Jersey Number of Player you\'d like to remove: ')
+    ct = 0
+    # goes through all players and searches for the matched jersey number
+    for p in myPlayers:
+      if p.getJnum() == jersey:
+        myPlayers.remove(myPlayers[ct])
+      ct += 1
+
+  if response == 6:
     saveTeam()
